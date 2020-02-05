@@ -1,2 +1,3 @@
 rootProject.name = 'shopper-microservices'
 
+include 'service-catalog'
