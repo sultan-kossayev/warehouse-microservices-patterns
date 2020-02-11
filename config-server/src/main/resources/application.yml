@@ -7,7 +7,7 @@ spring:
     config:
       server:
         native:
-          searchLocations: classpath:config/productservice
+          searchLocations: classpath:config/productservice, classpath:config/pricingservice
 
 server:
   port: 8081
