@@ -1,6 +1,6 @@
 spring:
-  name:
-    application: pricingservice
+  application:
+    name: pricingservice
   profiles:
     active: default
   cloud:
