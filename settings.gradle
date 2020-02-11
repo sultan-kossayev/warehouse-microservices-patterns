@@ -3,4 +3,5 @@ rootProject.name = 'warehouse-microservices'
 include 'service-product'
 include 'config-server'
 include 'service-pricing'
+include 'eureka-server'
 
