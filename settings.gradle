@@ -1,3 +1,3 @@
-rootProject.name = 'shopper-microservices'
+rootProject.name = 'warehouse-microservices'
 
-include 'service-catalog'
+include 'service-product'

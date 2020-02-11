@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: productservice
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: warehousedb
+
+server:
+  port: 8080
+  servlet:
+    context-path: /productservice/v1
