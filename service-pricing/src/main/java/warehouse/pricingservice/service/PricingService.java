@@ -4,7 +4,7 @@ import warehouse.pricingservice.model.Price;
 
 public interface PricingService {
 
-    Price createPrice(String productId, String priceValue, String priceCurrency);
+    Price createPrice(String productId, double priceValue, String priceCurrency);
 
-    Price getPriceForProduct(String oroductId);
+    Price getPriceForProduct(String productId);
 }

@@ -1,6 +1,7 @@
 package warehouse.productservice.model;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.Transient;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "products")
@@ -10,6 +11,9 @@ public class Product {
     private String id;
     private String name;
     private String description;
+
+    @Transient
+    private PriceValue price;
 
     public String getId() {
         return id;
@@ -33,5 +37,13 @@ public class Product {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public PriceValue getPrice() {
+        return price;
+    }
+
+    public void setPrice(PriceValue price) {
+        this.price = price;
     }
 }

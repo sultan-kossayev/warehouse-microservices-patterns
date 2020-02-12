@@ -8,7 +8,7 @@ public class Price {
 
     @Id
     private String id;
-    private String value;
+    private double value;
     private String currencyIso;
     private String productId;
 
@@ -20,11 +20,11 @@ public class Price {
         this.id = id;
     }
 
-    public String getValue() {
+    public double getValue() {
         return value;
     }
 
-    public void setValue(String value) {
+    public void setValue(double value) {
         this.value = value;
     }
 

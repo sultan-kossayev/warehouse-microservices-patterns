@@ -14,7 +14,7 @@ public class PricingController {
 
     @RequestMapping(method = RequestMethod.POST)
     public Price createPrice(@RequestParam("productId") String productId,
-                             @RequestParam("priceValue") String priceValue,
+                             @RequestParam("priceValue") double priceValue,
                              @RequestParam("priceCurrency") String priceCurrency) {
         return pricingService.createPrice(productId, priceValue, priceCurrency);
     }

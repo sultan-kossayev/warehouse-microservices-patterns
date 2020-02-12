@@ -14,7 +14,7 @@ public class DefaultPricingService implements PricingService {
     private PricingRepo pricingRepo;
 
     @Override
-    public Price createPrice(String productId, String priceValue, String priceCurrency) {
+    public Price createPrice(String productId, double priceValue, String priceCurrency) {
         Price price = new Price();
         price.setProductId(productId);
         price.setCurrencyIso(priceCurrency);
