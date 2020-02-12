@@ -11,6 +11,6 @@ import warehouse.productservice.model.PriceValue;
 @Service
 public interface PriceService {
 
-    @RequestMapping(method = RequestMethod.GET, value = "/pricingservice/v1/price/product/{productId}")
+    @RequestMapping(method = RequestMethod.GET, value = "/price/product/{productId}")
     PriceValue getPriceForProduct(@PathVariable("productId") String productId);
 }

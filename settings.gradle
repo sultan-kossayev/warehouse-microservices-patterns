@@ -4,4 +4,5 @@ include 'service-product'
 include 'config-server'
 include 'service-pricing'
 include 'eureka-server'
+include 'zuul-server'
 

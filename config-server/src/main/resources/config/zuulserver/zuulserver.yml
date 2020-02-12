@@ -1,0 +1,15 @@
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8083/eureka
+
+zuul:
+  ignored-services: '*'
+  prefix: /api
+  routes:
+    pricingservice: /pricingservice/**
+    productservice: /productservice/**
